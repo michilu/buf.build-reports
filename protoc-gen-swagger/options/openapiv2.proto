@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package grpc.gateway.protoc_gen_swagger.options;
+
+message Swagger {
+  repeated SecurityRequirement security = 12;
+}
+
+message SecurityRequirement {
+  message SecurityRequirementValue {
+  }
+  map<string, SecurityRequirementValue> security_requirement = 1;
+}

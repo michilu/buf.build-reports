@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package proto;
+
+import "protoc-gen-swagger/options/annotations.proto";
+
+option (grpc.gateway.protoc_gen_swagger.options.openapiv2_swagger) = {
+  security: {
+    security_requirement: {
+    }
+  }
+};
